@@ -1,0 +1,26 @@
+1-States:
+*Each state represents a specific behavioral pattern or sequence observed in malware samples
+*States are defined based on extracted features such as opcode sequences, system calls, API calls, file system activity, and network traffic patterns.
+The number of states is determined based on the complexity of malware behaviors and can be adjusted based on experimentation and domain knowledge.
+2-Initial State Probabilities:
+*Initial probabilities represent the likelihood of the model starting in each state
+*These probabilities can be estimated based on the relative frequency of occurrence of different states in the training data.
+3-Transition Probabilities:
+*Transition probabilities determine the likelihood of transitioning from one state to another in the model.
+*Captures the temporal dependencies between different malware behaviors.
+*Learned from the training data using algorithms like the Baum-Welch algorithm (Forward-Backward algorithm).
+4-Emission Probabilities:
+*Emission probabilities represent the likelihood of observing specific features (emissions) given the model's current state.
+*Learned from the training data and capture the probability distribution of features under each state.
+Training Algorithm:
+*Baum-Welch algorithm (Forward-Backward algorithm) for parameter estimation.
+*Estimate model parameters (transition and emission probabilities) from the training data iteratively until convergence
+6-Classification Algorithm:
+*Use the Viterbi algorithm to find the most likely sequence of states given a sequence of observed features during classification.
+*Assign class labels based on the most likely sequence of states or probabilities associated with each class.
+7-Evaluation Metrics:
+*(choosing it later)
+*Assess the model's ability to accurately classify malware samples compared to known classifications
+8-Refinement Mechanism:
+*Refine the model iteratively based on performance metrics
+*Adjust the number of states, incorporate additional features, fine-tune parameters, or explore alternative algorithms to improve classification accuracy.

@@ -1,0 +1,5 @@
+1- open csv with pands 
+2- get list of uniqueq (list of words that we can find)
+3- replace each word by its index
+4- do the hmms
+

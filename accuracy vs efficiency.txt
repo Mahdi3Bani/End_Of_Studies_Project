@@ -1,0 +1,33 @@
+accuracy vs efficiency
+1-SVM:
+A: 7
+E: 6
+2-Decision Trees:
+A:6
+E:7
+3-Clustering Algorithms:
+A:6
+E:7
+4-Autoencoders:
+A:7
+E:6
+5-(CNNs):
+A: 8
+E: 7
+
+6-(RNNs):
+A:7
+E: 6
+
+7-Random Forest:
+A: 7
+E: 8
+
+8-Gradient Boosting Machines (GBMs):
+A: 8
+E: 7
+
+9-Deep Learning Architectures (e.g., RCNNs, Attention Mechanisms, Transformer-based models):
+A: 9
+E: 5
+

@@ -1,0 +1,16 @@
+1-data collection:
+*request malicia project for datatest 
+* use 80% samples for training
+2-Feature Extraction:
+*Disassemble malware binaries into opcode sequences using the objdump command
+*Extract relevant features from the opcode sequences, including system calls, API calls, file system activity, and network traffic patterns.
+3-training HMMS:
+*it will be 4diff compilers (GCC, MinGW, TurboC, Clang), hand-written assembly (TASM), virus construction kit (NGVCK), and metamorphic code (MWOR)
+*Implement a five-fold cross-validation approach, dividing the dataset into 5 subsets for training and testing
+*Evaluate models using log likelihood per opcode (LLPO) scores computed during training
+4-opcode:
+*Evaluate the trained HMMs using log likelihood per opcode (LLPO) scores on the test subset
+*Calculate average LLPO scores across the 25 models for each malware sample.
+*Assess the classification performance based on LLPO scores and compare against known malware classifications
+5-Model Refinement:
+*Refine HMM models based on performance metrics, adjusting the number of states, incorporating additional features, or fine-tuning parameters
